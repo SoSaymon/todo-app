@@ -1,0 +1,13 @@
+nav.header--nav-main a.nav-main--link {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    transition: .2s;
+}
+nav.header--nav-main a.nav-main--link:hover {
+    transform: translateY(-5px);
+}
+nav.header--nav-main a.nav-main--link.active {
+    border-bottom: 5px black solid;
+    transform: translateY(0);
+}
