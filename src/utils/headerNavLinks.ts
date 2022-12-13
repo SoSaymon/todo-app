@@ -10,5 +10,9 @@ export const headerNavLinks = [
 	{
 		name: 'app',
 		path: '/app'
+	},
+	{
+		name: 'dupa',
+		path: '/dupa'
 	}
 ]

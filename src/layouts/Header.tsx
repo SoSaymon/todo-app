@@ -9,11 +9,11 @@ const headerIconMargin = 'm-2'
 const headerFontFamily = {fontFamily: 'Open Sans'}
 export const Header = () => {
 	const navLinks = headerNavLinks.map(link => (
-		<NavLink className={"nav-main--link"} key={link.name} to={link.path}>{link.name}</NavLink>
+		<NavLink className={"links--link"} key={link.name} to={link.path}>{link.name}</NavLink>
 	))
 	return (
-		<header>
-			<div className={"flex justify-around items-center bg-japaneseIndygo p-3 text-white font-bold"} style={headerFontFamily}>
+		<header className={"header"}>
+			<div className={"flex justify-around items-center bg-japaneseIndygo p-3 text-white font-bold header--info"} style={headerFontFamily}>
 				<span>
 					<FontAwesomeIcon icon={faEnvelope} size={"lg"} color={"#FDD428"}/>
 					<a href={"mailto:example@example.com"} target={"_blank"} rel="noreferrer" className={headerIconMargin}>example@example.com</a>
@@ -24,11 +24,11 @@ export const Header = () => {
 					<span className={headerIconMargin}>Czat: Pn-Sb 8:00-22:00</span>
 				</span>
 			</div>
-			<div className={"flex justify-around items-center bg-white p-3 font-bold opacity-80"}>
+			<div className={"flex justify-around items-center bg-white p-3 font-bold opacity-80 header--nav-main"}>
 				<span className={"font-bold text-2xl"}>
 					LOGO
 				</span>
-				<nav className={"flex justify-between w-80 uppercase header--nav-main"}>
+				<nav className={"flex justify-between w-80 uppercase nav-main--links"}>
 					{navLinks}
 				</nav>
 				<span></span>

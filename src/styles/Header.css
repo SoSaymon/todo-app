@@ -1,13 +1,23 @@
-nav.header--nav-main a.nav-main--link {
+nav.nav-main--links a.links--link {
     padding: 5px;
     display: block;
     text-decoration: none;
     transition: .2s;
 }
-nav.header--nav-main a.nav-main--link:hover {
+nav.nav-main--links a.links--link:hover {
     transform: translateY(-5px);
 }
-nav.header--nav-main a.nav-main--link.active {
+nav.nav-main--links a.links--link.active {
     border-bottom: 5px black solid;
     transform: translateY(0);
+}
+
+header.header div.header--info {
+    height: 5vh;
+}
+
+header.header div.header--nav-main {
+    height: 6vh;
+    position: fixed;
+    width: 100%;
 }
