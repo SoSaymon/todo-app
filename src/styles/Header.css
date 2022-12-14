@@ -13,7 +13,7 @@ nav.nav-main--links a.links--link.active {
 }
 
 header.header div.header--info {
-    height: 5vh;
+    height: 50px;
 }
 
 header.header div.header--nav-main {
@@ -21,3 +21,12 @@ header.header div.header--nav-main {
     position: fixed;
     width: 100%;
 }
+/*.sticky {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.sticky + .content {*/
+/*    padding-top: 60px;*/
+/*}*/
