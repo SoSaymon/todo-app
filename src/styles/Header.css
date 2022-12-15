@@ -1,32 +1,23 @@
-nav.nav-main--links a.links--link {
+nav.nav-main__links a.links__link {
     padding: 5px;
     display: block;
     text-decoration: none;
     transition: .2s;
 }
-nav.nav-main--links a.links--link:hover {
+nav.nav-main__links a.links__link:hover {
     transform: translateY(-5px);
 }
-nav.nav-main--links a.links--link.active {
+nav.nav-main__links a.links__link.active {
     border-bottom: 5px black solid;
     transform: translateY(0);
 }
 
-header.header div.header--info {
+header.header div.header__info {
     height: 50px;
 }
 
-header.header div.header--nav-main {
+header.header div.header__nav-main {
     height: 6vh;
     position: fixed;
     width: 100%;
 }
-/*.sticky {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.sticky + .content {*/
-/*    padding-top: 60px;*/
-/*}*/

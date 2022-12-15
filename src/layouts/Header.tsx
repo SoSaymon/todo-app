@@ -6,31 +6,33 @@ import {NavLink} from "react-router-dom";
 import '../styles/Header.css'
 import {Logo} from "../components/Logo";
 
-const headerIconMargin = 'm-2'
-const headerFontFamily = {fontFamily: 'Open Sans'}
 export const Header = () => {
 	const navLinks = headerNavLinks.map(link => (
-		<NavLink className={"links--link"} key={link.name} to={link.path}>{link.name}</NavLink>
+		<NavLink className={"links__link"} key={link.name} to={link.path}>{link.name}</NavLink>
 	))
 	return (
 		<header className={"header"}>
-			<div className={"flex justify-around items-center bg-japaneseIndygo p-3 text-white font-bold header--info"} style={headerFontFamily}>
-				<span>
+			<div className={"flex justify-around items-center w-full p-3 bg-japaneseIndygo text-white font-bold header__info"} style={{fontFamily: 'Open Sans'}}>
+				<div className={"flex justify-between items-center container info__container"}>
+					<span className={"container__mail"}>
 					<FontAwesomeIcon icon={faEnvelope} size={"lg"} color={"#FDD428"}/>
-					<a href={"mailto:example@example.com"} target={"_blank"} rel="noreferrer" className={headerIconMargin}>example@example.com</a>
+					<a href={"mailto:example@example.com"} target={"_blank"} rel="noreferrer" className={"m-2"}>example@example.com</a>
 				</span>
-				<span></span>
-				<span>
+					<span className={"container__spacer"}></span>
+					<span className={"container__chat-hours"}>
 					<FontAwesomeIcon icon={faClock} size={"lg"} color={"#FDD428"}/>
-					<span className={headerIconMargin}>Czat: Pn-Sb 8:00-22:00</span>
+					<span className={"m-2"}>Czat: Pn-Sb 8:00-22:00</span>
 				</span>
+				</div>
 			</div>
-			<div className={"flex justify-around items-center bg-white p-3 font-bold opacity-80 header--nav-main"}>
-				<Logo/>
-				<nav className={"flex justify-between w-80 uppercase nav-main--links"}>
-					{navLinks}
-				</nav>
-				<span></span>
+			<div className={"flex justify-around items-center p-3 bg-white opacity-80 font-bold header__nav-main"}>
+				<div className={"flex justify-between items-center container nav-main__container"}>
+					<Logo/>
+					<nav className={"flex justify-between w-80 uppercase nav-main__links"}>
+						{navLinks}
+					</nav>
+					<span className={"container__spacer"}></span>
+				</div>
 			</div>
 		</header>
 	)
