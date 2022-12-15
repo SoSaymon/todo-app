@@ -4,6 +4,7 @@ import {headerNavLinks} from "../utils/headerNavLinks";
 import {NavLink} from "react-router-dom";
 
 import '../styles/Header.css'
+import {Logo} from "../components/Logo";
 
 const headerIconMargin = 'm-2'
 const headerFontFamily = {fontFamily: 'Open Sans'}
@@ -25,9 +26,7 @@ export const Header = () => {
 				</span>
 			</div>
 			<div className={"flex justify-around items-center bg-white p-3 font-bold opacity-80 header--nav-main"}>
-				<span className={"font-bold text-2xl"}>
-					LOGO
-				</span>
+				<Logo/>
 				<nav className={"flex justify-between w-80 uppercase nav-main--links"}>
 					{navLinks}
 				</nav>

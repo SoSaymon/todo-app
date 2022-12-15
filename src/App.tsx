@@ -3,6 +3,7 @@ import './styles/App.css';
 import {BrowserRouter} from "react-router-dom";
 import {Header} from "./layouts/Header";
 import {Main} from "./layouts/Main";
+import {Footer} from "./layouts/Footer";
 function App() {
     useEffect(() => {
        //  window.onscroll = () => {
@@ -25,6 +26,7 @@ function App() {
          <>
              <Header/>
              <Main/>
+             <Footer/>
          </>
       </BrowserRouter>
   );
