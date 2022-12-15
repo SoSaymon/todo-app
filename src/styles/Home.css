@@ -1,4 +1,4 @@
-.home {
+.home__text-holder {
     min-height: calc(100vh - 50px);
 
     background: url("../img/main/meeting.jpg") no-repeat;

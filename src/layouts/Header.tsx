@@ -5,11 +5,37 @@ import {NavLink} from "react-router-dom";
 
 import '../styles/Header.css'
 import {Logo} from "../components/Logo";
+import {useEffect} from "react";
 
 export const Header = () => {
 	const navLinks = headerNavLinks.map(link => (
 		<NavLink className={"links__link"} key={link.name} to={link.path}>{link.name}</NavLink>
 	))
+
+	useEffect(() => {
+		window.onscroll = function () {
+			scrollCallback();
+		}
+
+		const navbar = document.querySelector('.header__nav-main') as HTMLElement
+		const main = document.querySelector('main') as HTMLElement
+		const sticky = navbar?.offsetTop
+
+		const scrollCallback = () => {
+			if (window.pageYOffset > sticky) {
+				navbar?.classList.add("sticky")
+				if (main) {
+					main.style.paddingTop = '50px'
+				}
+			} else {
+				navbar?.classList.remove("sticky")
+				if (main) {
+					main.style.paddingTop = '0'
+				}
+			}
+		}
+	}, [])
+
 	return (
 		<header className={"header"}>
 			<div className={"flex justify-around items-center w-full p-3 bg-japaneseIndygo text-white font-bold header__info"} style={{fontFamily: 'Open Sans'}}>

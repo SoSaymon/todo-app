@@ -18,6 +18,10 @@ header.header div.header__info {
 
 header.header div.header__nav-main {
     height: 6vh;
+}
+
+.sticky {
     position: fixed;
+    top: 0;
     width: 100%;
 }
