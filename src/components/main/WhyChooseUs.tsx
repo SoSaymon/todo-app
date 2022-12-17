@@ -7,11 +7,12 @@ export const WhyChooseUs = () => {
 		<div className={"flex justify-center items-center w-full h-screen bg-white home__why-choose-us"}>
 			<div className={"flex flex-col justify-between items-center w-full h-full p-16 why-choose-us__container"}>
 				<h1 className={"text-4xl font-bold mb-20 why-choose-us__title"}>Why choose us?</h1> {/*make underline after title*/}
-				<div className={"flex justify-between items-center w-full h-full why-choose-us__content"}>
-					<div className={"flex items-center w-1/2 h-full content__image-container"}>
-						<img className={"rounded-xl image-container__img"} src={img} alt={'meeting'}/>
-					</div>
-					<div className={"flex flex-col justify-between items-center w-1/2 h-full content__text-container"}>
+				<div className="container flex space-between items-center w-full h-full why-choose-us__content">
+					{/*<div className={"h-full w-1/2 why-choose-us__content__img"}>*/}
+					{/*	<img className={"rounded-xl w-full content__img"} src={img} alt={'meeting'}/> /!* make image same height as text *!/*/}
+					{/*</div>*/}
+					<img className={"rounded-xl w-1/2 content__img"} src={img} alt={'meeting'}/> {/* make image same height as text */}
+					<div className="flex flex-col justify-between ml-12 w-1/2 content__text-container" id="test">
 						<div className={"w-96 p-4 text-container__item"}>
 							<span className={"text-xl font-bold"}>
 								<FontAwesomeIcon icon={faComment} className={"mr-4"} size={"lg"}/>
@@ -35,7 +36,6 @@ export const WhyChooseUs = () => {
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	)
