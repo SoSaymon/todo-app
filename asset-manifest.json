@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.26bcb435.css",
-    "main.js": "/static/js/main.e3ad4983.js",
+    "main.css": "/static/css/main.3113d01f.css",
+    "main.js": "/static/js/main.25bbe408.js",
     "static/js/787.2843ca88.chunk.js": "/static/js/787.2843ca88.chunk.js",
     "static/media/meeting.jpg": "/static/media/meeting.47dcf73b0130d9bd8caf.jpg",
+    "static/media/why-choose-us.jpg": "/static/media/why-choose-us.ef3100c694b2b3252890.jpg",
     "index.html": "/index.html",
-    "main.26bcb435.css.map": "/static/css/main.26bcb435.css.map",
-    "main.e3ad4983.js.map": "/static/js/main.e3ad4983.js.map",
+    "main.3113d01f.css.map": "/static/css/main.3113d01f.css.map",
+    "main.25bbe408.js.map": "/static/js/main.25bbe408.js.map",
     "787.2843ca88.chunk.js.map": "/static/js/787.2843ca88.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26bcb435.css",
-    "static/js/main.e3ad4983.js"
+    "static/css/main.3113d01f.css",
+    "static/js/main.25bbe408.js"
   ]
 }
