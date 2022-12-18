@@ -1,0 +1,2 @@
+- Add additional info to tasks
+- update readme, add info about usage js-cookie
