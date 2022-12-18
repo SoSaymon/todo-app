@@ -24,6 +24,13 @@ This project is licensed under the MIT License - see the `LICENSE.txt` file for 
 - SoSaymon - [szymon.chirowski@protonmail.com](mailto:szymon.chirowski@protonmail.com) - [@SoSaymon](https://twitter.com/SoSaymon)
 - Project Link: [https://github.com/SoSaymon/todo-app](https://github.com/SoSaymon/todo-app)
 
+## Roadmap
+- [X] Create layout
+- [ ] Create app
+- [ ] Migrate to Redux
+- [ ] Multi-language support
+- [ ] Add RWD support
+
 ## Acknowledgements
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
